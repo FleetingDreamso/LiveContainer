@@ -131,6 +131,8 @@ void SideStoreMyAppsViewController_hook_escapeButtonTapped(UICollectionViewContr
 
 static void SSInstallVersionWindow(UIWindowScene *windowScene)
 {
+    return;
+    
     NSString *identifier = windowScene.session.persistentIdentifier;
     if (identifier.length == 0 || SSVersionWindows[identifier] != nil) {
         return;
